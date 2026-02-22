@@ -1,0 +1,106 @@
+{
+  "target_col": "Depression",
+  "categorical_cols": [
+    "Gender",
+    "Sleep Duration",
+    "Dietary Habits",
+    "Have you ever had suicidal thoughts ?",
+    "Family History of Mental Illness"
+  ],
+  "numeric_cols": [
+    "Age",
+    "Academic Pressure",
+    "Study Satisfaction",
+    "Study Hours",
+    "Financial Stress"
+  ],
+  "model_name": "LogisticRegression",
+  "cat_options": {
+    "Gender": [
+      "Female",
+      "Male"
+    ],
+    "Sleep Duration": [
+      "5-6 hours",
+      "7-8 hours",
+      "Less than 5 hours",
+      "More than 8 hours"
+    ],
+    "Dietary Habits": [
+      "Healthy",
+      "Moderate",
+      "Unhealthy"
+    ],
+    "Have you ever had suicidal thoughts ?": [
+      "no",
+      "yes"
+    ],
+    "Family History of Mental Illness": [
+      "no",
+      "yes"
+    ]
+  },
+  "risk_schema": {
+    "categorical": {
+      "Gender": {
+        "overall_pos_rate": 0.50199203187251,
+        "risk_levels": [
+          "Male"
+        ]
+      },
+      "Sleep Duration": {
+        "overall_pos_rate": 0.50199203187251,
+        "risk_levels": [
+          "5-6 hours",
+          "7-8 hours",
+          "Less than 5 hours"
+        ]
+      },
+      "Dietary Habits": {
+        "overall_pos_rate": 0.50199203187251,
+        "risk_levels": [
+          "Unhealthy"
+        ]
+      },
+      "Have you ever had suicidal thoughts ?": {
+        "overall_pos_rate": 0.50199203187251,
+        "risk_levels": [
+          "yes"
+        ]
+      },
+      "Family History of Mental Illness": {
+        "overall_pos_rate": 0.50199203187251,
+        "risk_levels": [
+          "yes"
+        ]
+      }
+    },
+    "numeric": {
+      "Age": {
+        "corr": -0.21562453448529736,
+        "median": 26.5,
+        "risk_direction": "low"
+      },
+      "Academic Pressure": {
+        "corr": 0.4762591772029221,
+        "median": 3.0,
+        "risk_direction": "high"
+      },
+      "Study Satisfaction": {
+        "corr": -0.2934837416598349,
+        "median": 3.0,
+        "risk_direction": "low"
+      },
+      "Study Hours": {
+        "corr": 0.20044133961087965,
+        "median": 7.0,
+        "risk_direction": "high"
+      },
+      "Financial Stress": {
+        "corr": 0.2968461282609227,
+        "median": 3.0,
+        "risk_direction": "high"
+      }
+    }
+  }
+}

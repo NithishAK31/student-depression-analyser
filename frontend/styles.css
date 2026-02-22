@@ -1,0 +1,35 @@
+/* Extra utility tweaks on top of Tailwind */
+:root{
+  --bg: #0b0f1a;
+  --card: #0f1629;
+  --muted: #a3adbf;
+}
+html, body { height:100%; }
+body{
+  background: radial-gradient(1200px 600px at 10% 0%, #151b2e 0%, var(--bg) 60%);
+}
+.card{
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 10px 40px rgba(0,0,0,.35);
+}
+.badge{
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.25rem .6rem; border-radius:9999px; font-weight:600;
+}
+.badge.ok{ background: rgba(16,185,129,.15); color:#10b981; }
+.badge.warn{ background: rgba(245,158,11,.15); color:#f59e0b; }
+.badge.danger{ background: rgba(239,68,68,.15); color:#ef4444; }
+.progress{
+  height: 10px; border-radius: 9999px; background: rgba(255,255,255,.08);
+  overflow: hidden;
+}
+.progress > div{
+  height: 100%; background: linear-gradient(90deg,#38bdf8,#22c55e);
+}
+select, input{
+  background-color: #0f1530;
+  border: 1px solid #223060;
+  color: #e5e7eb;
+}
+select:focus, input:focus{ outline: none; border-color: #60a5fa; box-shadow: 0 0 0 3px rgba(59,130,246,.25); }
