@@ -4,6 +4,7 @@ import joblib, json
 import numpy as np
 import pandas as pd
 from pathlib import Path
+import os
 
 APP_DIR = Path(__file__).resolve().parent
 MODEL_PATH = APP_DIR / "model_pipeline.joblib"
